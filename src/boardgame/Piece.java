@@ -1,5 +1,6 @@
-package src.application.boardgame;
+package src.boardgame;
 
+//Peça comum do tabuleiro
 public class Piece {
     protected Position position; //Posição do xadrez
     private Board board;

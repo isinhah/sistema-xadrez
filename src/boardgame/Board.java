@@ -1,4 +1,4 @@
-package src.application.boardgame;
+package src.boardgame;
 
 public class Board {
     private int rows;
@@ -25,5 +25,15 @@ public class Board {
 
     public void setColumns(int columns) {
         this.columns = columns;
+    }
+
+    //Retorna a peça com linha e coluna
+    public Piece piece(int row, int column) {
+        return pieces[row][column];
+    }
+
+    //Retorna a peça pela posição
+    public Piece piece(Position position) {
+        return pieces[position.getRow()][position.getColumn()];
     }
 }
